@@ -1,0 +1,171 @@
+#app {
+  background-color: #fff;
+}
+
+#app header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 1.62rem !important;
+  background-color: #356a45;
+  align-items: flex-start;
+  padding: 0 .4rem;
+}
+
+#app header img {
+  width: 2.18rem;
+  height: auto;
+}
+
+#app header span {
+  font-size: .25rem;
+  color: #fff;
+  margin-top: .213333rem;
+}
+
+#app .main {
+  padding: .2rem;
+}
+
+#app .main .form {
+  padding: 0 .2rem;
+}
+
+#app .main .form .form-item {
+  margin-bottom: .32rem;
+}
+
+#app .main .form .form-item p {
+  line-height: .28rem;
+  padding-bottom: .12rem;
+  font-size: .25rem;
+  color: #212121;
+}
+
+#app .main .form .form-item .inp {
+  background-color: #f5f5f5;
+  border: .01rem solid #c4c4c4;
+  border-radius: .053333rem;
+  padding-left: .28rem;
+  height: .72rem;
+  display: flex;
+  align-items: center;
+}
+
+#app .main .form .form-item .inp label {
+  margin-right: .3rem;
+  cursor: pointer;
+}
+
+#app .main .form .form-item .inp label span.radio_label {
+  font-size: .28rem;
+  padding-left: .1rem;
+  color: #606266;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#app .main .form .form-item .inp label span.radio_input {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-bottom: .02rem;
+}
+
+#app .main .form .form-item .inp label span.radio_input span {
+  width: .3rem;
+  height: .3rem;
+  border: .013333rem solid #dcdfe6;
+  border-radius: 100%;
+  background-color: #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+}
+
+#app .main .form .form-item .inp label span.radio_input span:after {
+  width: .14rem;
+  height: .14rem;
+  border-radius: 100%;
+  background-color: #fff;
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: -webkit-transform .15s ease-in;
+  transition: -webkit-transform .15s ease-in;
+  transition: transform .15s ease-in;
+  transition: transform .15s ease-in, -webkit-transform .15s ease-in;
+}
+
+#app .main .form .form-item .inp label span.radio_input input {
+  opacity: 0;
+  outline: 0;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+}
+
+#app .main .form .form-item .inp label.is-checked span.radio_input span {
+  background-color: #356a45;
+  border-color: #356a45;
+}
+
+#app .main .form .form-item .inp label.is-checked span.radio_input span:after {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#app .main button.cal-btn {
+  width: 6.8rem;
+  height: .88rem;
+  background-color: #356a45;
+  margin-top: .94rem;
+  color: #fff;
+  font-size: .32rem;
+  border: none;
+}
+
+#app .main .result-container {
+  margin-top: .94rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#app .main .result-container .cal-box,
+#app .main .result-container .risk-box {
+  width: 100%;
+  height: .3rem;
+  line-height: .3rem;
+  font-size: .26rem;
+  color: #356a45;
+  display: flex;
+}
+
+#app .main .result-container .cal-box p,
+#app .main .result-container .cal-box .result-data,
+#app .main .result-container .risk-box p,
+#app .main .result-container .risk-box .result-data {
+  width: 46%;
+}
+
+#app .main .result-container .cal-box > div,
+#app .main .result-container .risk-box > div {
+  width: 100%;
+  height: .3rem;
+  border-bottom: .013333rem solid #acacac;
+}
+
+#app .main .result-container .risk-box {
+  margin: .7rem 0;
+}
