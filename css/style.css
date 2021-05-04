@@ -124,6 +124,11 @@
   transform: translate(-50%, -50%) scale(1);
 }
 
+#app .main .form .form-item .inp label.is-checked span.radio_label {
+  color: #356a45;
+  font-weight: 700;
+}
+
 #app .main button.cal-btn {
   width: 6.8rem;
   height: .88rem;
