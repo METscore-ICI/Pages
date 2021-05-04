@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title></title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<link href="css/public.css" rel="stylesheet" type="text/css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript">
+		(function (d) { function e() { var a = c.getBoundingClientRect().width; 750 < a && (a = 750); a = a / 750 * 100; c.style.fontSize = a + "px"; var b = parseFloat(window.getComputedStyle(document.documentElement)["font-size"]); b !== a && 0 < b && 1 < Math.abs(b - a) && (c.style.fontSize = a * a / b + "px") } var c = d.document.documentElement, f; d.addEventListener("resize", function () { clearTimeout(f); f = setTimeout(e, 100) }, !1); e() })(window);            
+	</script>
+</head>
+
+<body>
+	<div id="app">
+		<header>
+			<img src="./images/logo.jpg" alt="">
+			<span>Risk Prediction of Severe and Critical Type of COVID-19</span>
+		</header>
+		<main class="main">
+			<form class="form">
+				<!-- ADRENAL(肾上腺) -->
+				<div class="form-item ADRENAL">
+					<p>ADRENAL(肾上腺)</p>
+					<div class="inp">
+						<label for="">
+							<span class="radio_input">
+								<span></span>
+								<input class="val" type="radio" name="" id="" value="0">
+							</span>
+							<span class="radio_label">Yes</span>
+						</label>
+						<label for="">
+							<span class="radio_input">
+								<span></span>
+								<input class="val" type="radio" name="" id="" value="1">
+							</span>
+							<span class="radio_label">No</span>
+						</label>
+					</div>
+				</div>
+				<!-- BRAIN(脑) -->
+				<div class="form-item BRAIN">
+					<p>BRAIN(脑)</p>
+					<div class="inp">
+						<label for="">
+							<span class="radio_input">
+								<span></span>
+								<input class="val" type="radio" name="" id="" value="0">
+							</span>
+							<span class="radio_label">Yes</span>
+						</label>
+						<label for="">
+							<span class="radio_input">
+								<span></span>
+								<input class="val" type="radio" name="" id="" value="1">
+							</span>
+							<span class="radio_label">No</span>
+						</label>
+					</div>
+				</div>
+				<!-- LIVER(肝) -->
+				<div class="form-item LIVER">
+					<p>LIVER(肝)</p>
+					<div class="inp">
+						<label for="">
+							<span class="radio_input">
+								<span></span>
+								<input class="val" type="radio" name="" id="" value="0">
+							</span>
+							<span class="radio_label">Yes</span>
+						</label>
+						<label for="">
+							<span class="radio_input">
+								<span></span>
+								<input class="val" type="radio" name="" id="" value="1">
+							</span>
+							<span class="radio_label">No</span>
+						</label>
+					</div>
+				</div>
+				<!-- BONE(骨) -->
+				<div class="form-item BONE">
+					<p>BONE(骨)</p>
+					<div class="inp">
+						<label for="">
+							<span class="radio_input">
+								<span></span>
+								<input class="val" type="radio" name="" id="" value="0">
+							</span>
+							<span class="radio_label">Yes</span>
+						</label>
+						<label for="">
+							<span class="radio_input">
+								<span></span>
+								<input class="val" type="radio" name="" id="" value="1">
+							</span>
+							<span class="radio_label">No</span>
+						</label>
+					</div>
+				</div>
+				<!-- PEFF(胸腔积液) -->
+				<div class="form-item PEFF">
+					<p>PEFF(胸腔积液)</p>
+					<div class="inp">
+						<label for="">
+							<span class="radio_input">
+								<span></span>
+								<input class="val" type="radio" name="" id="" value="0">
+							</span>
+							<span class="radio_label">Yes</span>
+						</label>
+						<label for="">
+							<span class="radio_input">
+								<span></span>
+								<input class="val" type="radio" name="" id="" value="1">
+							</span>
+							<span class="radio_label">No</span>
+						</label>
+					</div>
+				</div>
+				<!-- PLEURA(胸膜) -->
+				<div class="form-item PLEURA">
+					<p>PLEURA(胸膜)</p>
+					<div class="inp">
+						<label for="">
+							<span class="radio_input">
+								<span></span>
+								<input class="val" type="radio" name="" id="" value="0">
+							</span>
+							<span class="radio_label">Yes</span>
+						</label>
+						<label for="">
+							<span class="radio_input">
+								<span></span>
+								<input class="val" type="radio" name="" id="" value="1">
+							</span>
+							<span class="radio_label">No</span>
+						</label>
+					</div>
+				</div>
+				<!-- MEDIA(纵隔) -->
+				<div class="form-item MEDIA">
+					<p>MEDIA(纵隔)</p>
+					<div class="inp">
+						<label for="">
+							<span class="radio_input">
+								<span></span>
+								<input class="val" type="radio" name="" id="" value="0">
+							</span>
+							<span class="radio_label">Yes</span>
+						</label>
+						<label for="">
+							<span class="radio_input">
+								<span></span>
+								<input class="val" type="radio" name="" id="" value="1">
+							</span>
+							<span class="radio_label">No</span>
+						</label>
+					</div>
+				</div>
+			</form>
+			<button class="cal-btn">Calculate(计算)</button>
+			<div class="result-container">
+				<div class="cal-box">
+					<p>HNC-LL score(评分)：</p>
+					<div class="result-data">
+						<div></div>
+					</div>
+				</div>
+				<div class="risk-box">
+					<p>Risk level (风险等级）：</p>
+					<div class="result-data">
+						<div></div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+</body>
+<script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script src="js/index.js"></script>
+<script src="js/layer.js"></script>
+</html>
