@@ -81,11 +81,14 @@ $('.cal-btn').click(function () {
   var Pred_risk = -5 * ADRENAL + -5 * BRAIN + -3 * LIVER + 1 * BONE + 2 * PEFF + 0 * PLEURA + 1 * MEDIA
   var METscore = Prog_risk + Pred_risk
 
+  $('.Prog_risk_data>div').html(Prog_risk)
+  $('.Pred_risk_data>div').html(Pred_risk)
+
   $('.cal-box .result-data>div').html(METscore)
   if (METscore >= 3) {
-    $('.risk-box .result-data>div').html('METscore-H')
+    $('.risk-box .result-data>div').html('METscore-High')
   } else (
-    $('.risk-box .result-data>div').html('METscore-L')
+    $('.risk-box .result-data>div').html('METscore-Low')
   )
   
 })
